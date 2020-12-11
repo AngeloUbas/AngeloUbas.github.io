@@ -8,34 +8,73 @@
     
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-  </head>
-  <a href="index.html">Home</a>
-  <a href="story.html">Our Story</a>
-  <a href="podcast.html">Calming Sounds/Podcasts</a>
-  <a href="vids.html">Videos & Articles</a>
-  <a href="tribute.html">Tribute Page</a>
-  <body>
-    <h1>Calming Sounds & Podcasts</h1>
     
-<div class="container">
+    
+  </head>
+  <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="story.html">Our Story</a>
+      <a href="podcast.html">Calming Sounds/Podcasts</a>
+      <a href="vids.html">Videos & Articles</a>
+      <a href="tribute.html">Tribute Page</a>
+  </div>
+  <body>
+ 
+
+
+    
+    
+<div class="container-fluid">
   <div class="row">
     <div class="col">
-      <div class="row head">
-        What is Self Care? 
-    </div>
-      <div class="row summary">
-        Description 
-      </div>
+      <h2>The Seven Pillars of Self Care</h2>
     </div>
     <div class="col">
-      <img class="pod-photo" src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2F9999323c-2ef6-495a-a05a-23f9367f2e25.image.png?v=1607470887024" 
-           />
+      <!-- photo of podcast -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img id="pod-photo" src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2F9999323c-2ef6-495a-a05a-23f9367f2e25.image.png?v=1607470887024
+                  " alt="Seven Pillars" >
+        <div class="carousel-caption">
+          <h1>The Seven Pillars</h1>
+          <p>written & hosted by : Self Care for you</p>
+        </div>
+      </div>
     </div>
+      
+    </div>
+  </div>  
+      
+    </div>
+
+    
+ 
+    <!-- Cards of Podcasts and sounds -->
+    
+  <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2F01e0810e-0786-4002-bb54-77ebbd630123.image.png?v=1607648789627" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
-    </div>
+</div>
+  <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2F35aab7e8-705e-4a20-9b96-f8ddcbcb62f7.image.png?v=1607652569934" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>

@@ -5,6 +5,25 @@ body {
   margin: 2em;
 }
 
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.headerFont{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #152B63;
@@ -36,34 +55,58 @@ body {
 }
 
 .logos {
-  float: right;
-  width: 37px;
-  height: 37px;
-  left: 1416px;
+  padding: 10px;
+  width: 50px;
+}
+
+.flex-container-5 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .container-fluid .container {
   border: groove;
   text-align: center;
+  position: relative;
 }
 
-.container-fluid {
-  
-}
-
-.row 
-.row-3
-.row-5 {
+.row .row-3 .row-5 {
   border: 2px solid purple;
 }
 .col {
   border: 3px solid gold;
 }
 
+
+.circle{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .circle > img {
   border-radius: 50%;
   display: block;
   margin: 0 auto;
+}
+
+.circleText{
+  font-family: "Alata", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 34px;
+  display: flex;
+/*   align-items: center; */
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  color: black
+}
+
+.vertical-center {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .container {
@@ -86,9 +129,21 @@ body {
 }
 
 /* Head-Page */
+
+.bg { 
+    background-image: url("https://mimsi.dk/images/eeg.jpg");
+
+    height: 400px; 
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #head-photo {
   width: 1217px;
   height: 700px;
+  justify-content: center;
 }
 
 .flex-container-1 {
@@ -131,12 +186,12 @@ body {
 
 /* Podcast*/
 #podcast {
-width: 1126px;
-height: 377px;
+  width: 1126px;
+  height: 377px;
 
-border: 5px solid #C8E8AF;
-box-sizing: border-box;
-border-radius: 25px;
+  border: 5px solid #C8E8AF;
+  box-sizing: border-box;
+  border-radius: 25px;
 }
 .flex-container-2 {
   display: flex;
@@ -151,6 +206,35 @@ border-radius: 25px;
   width: 540px;
   height: 346px;
 }
+
+#new {
+  width: 840px;
+  height: 149px;
+  left: calc(50% - 814px / 2 - 156px);
+  top: calc(50% - 149px / 2 - 114px);
+
+  border: 5px solid #C8E8AF;
+  box-sizing: border-box;
+  border-radius: 20px 0px 0px 0px;
+}
+
+#pod-button {
+  position: absolute;
+  width: 154px;
+  height: 41px;
+  left: 637px;
+  top: 311px;
+}
+
+#play-button {
+  position: absolute;
+  font-size: 48px;
+  background-color: #152B63;
+  width: 100px;
+  height: 100px;
+}
+
+/* Articles and Videos */
 #art-box-1 {
   background: #FFFFFF;
 }
@@ -171,7 +255,7 @@ border-radius: 25px;
 }
 
 /* motivational quote*/
-.quote-box{
+.quote-box {
   display: flex;
   width: 1217px;
   height: 335px;
@@ -179,7 +263,7 @@ border-radius: 25px;
   background: #C8E8AF;
 }
 
-.quote-box> div {
+.quote-box > div {
   background-color: #f1f1f1;
   margin: 10px;
   padding: 20px;
@@ -274,7 +358,7 @@ border-radius: 25px;
 .info {
   width: 200px;
   height: 28px;
-
+  text-decoration: underline;
   font-family: "Comfortaa", cursive;
   font-style: normal;
   font-weight: bold;
@@ -318,45 +402,85 @@ border-radius: 25px;
 /* Articles, Videos Page*/
 
 /* Calming Sounds, Podcasts*/
+
+#pod-photo {
+width: 600px;
+height: 400px;
+left: 755px;
+top: 365px;
+}
+/* Our Story */
 .head {
-position: absolute;
-width: 1624px;
-height: 760px;
-left: 67px;
-top: 288px;
-text-align: left;
-background: #FFFFFF;
-border: 1px solid #000000;
-box-sizing: border-box;
+  position: absolute;
+  width: 1624px;
+  height: 760px;
+  left: 67px;
+  top: 288px;
+  text-align: left;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
 }
 
 .summary {
-position: absolute;
-width: 549px;
-height: 357px;
-left: 72px;
-top: 327px;
+  position: absolute;
+  width: 549px;
+  height: 357px;
+  left: 72px;
+  top: 327px;
 
-font-family: Alata;
-font-style: normal;
-font-weight: normal;
-font-size: 35px;
-line-height: 72px;
-/* or 206% */
+  font-family: Alata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 72px;
+  /* or 206% */
 
-display: flex;
-align-items: center;
-letter-spacing: -0.015em;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
 
-color: #000000;
-
+  color: #000000;
 }
 
 .pod-photo {
-position: absolute;
-width: 845px;
-height: 595px;
-left: 755px;
-top: 365px;
+  position: absolute;
+  width: 845px;
+  height: 595px;
+  left: 755px;
+  top: 365px;
+}
 
+.row {
+  border: solid gold 2px;
+}
+
+.answers{
+  background: #AFCCAE;
+  color: white;
+}
+
+.us {
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+.new {
+  background: white;
+  margin: 125px;
+}
+
+#story-quote {
+width: 800px;
+height: 400px;
+left: 296px;
+top: 1566px;
+
+background: #FFFFFF;
+mix-blend-mode: normal;
+border: 5px solid #1321A0;
+}
+
+.help {
+  background: #d0e2ea;
 }
